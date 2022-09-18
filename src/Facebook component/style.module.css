@@ -1,0 +1,10 @@
+.commentBackground {
+  border-radius: 13px;
+  background: white;
+  padding: 18px;
+  border: dashed 1px;
+  margin: 5px 0;
+}
+.likeShare {
+  margin-bottom: 5px;
+}

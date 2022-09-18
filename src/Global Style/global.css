@@ -1,0 +1,15 @@
+:root {
+  --primitive: #40a9ff;
+  --delete: #ff4d4f;
+}
+.flex {
+  display: flex;
+}
+div.scrollBar::-webkit-scrollbar {
+  background: transparent;
+  width: 8px;
+}
+div.scrollBar::-webkit-scrollbar-thumb {
+  background-color: #b7b7b7;
+  border-radius: 15px;
+}

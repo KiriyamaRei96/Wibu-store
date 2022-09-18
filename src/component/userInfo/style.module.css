@@ -1,0 +1,178 @@
+@media screen and (max-width: 1000px) {
+  .userInfoBody {
+    flex-direction: column;
+  }
+  .userInfoGroup {
+    width: 100% !important;
+  }
+  .HistoryItem span {
+    font-size: 12px;
+  }
+  .userHistoryGroupHeader span {
+    font-size: 12px;
+  }
+  .userHistoryGroupHeader h3 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .userHistoryGroup {
+    margin: 5px 0 !important;
+  }
+  .itemDetailGroup {
+    flex-direction: column;
+    height: fit-content !important;
+  }
+  .itemDetailGroup span {
+    margin: 0 !important;
+  }
+}
+
+.formMain {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  padding: 30px 20px;
+  text-transform: capitalize;
+  border: dashed 2px #666;
+  border-radius: 26px;
+}
+.infoGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.avtarInputGroup,
+.avtarInputGroup div {
+  display: flex;
+}
+.avtarWrapper {
+  width: 100px;
+  height: 100px;
+
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-right: auto;
+}
+.avtarWrapper img {
+  height: 100%;
+  width: auto;
+}
+.avatarInputWrapper {
+  width: 80%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.formMain button {
+  text-transform: capitalize;
+
+  margin-top: 17px;
+}
+.error {
+  color: var(--delete);
+  font-size: 12px;
+}
+.userInfoBody {
+  padding: 15px 0px;
+}
+.userInfoGroup {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #666 solid 1px;
+  padding: 30px 18px;
+  border-radius: 16px;
+  height: fit-content;
+}
+.userInfoGroup span {
+  align-self: flex-start;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.userInfoAvataWrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.userInfoAvataWrapper img {
+  height: 100%;
+  width: auto;
+}
+.userHistoryGroup {
+  flex: 1;
+  margin-left: 7px;
+}
+.userHistoryList {
+  min-height: 400px;
+  max-height: 550px;
+  overflow: auto;
+}
+.userHistoryGroupHeader {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  align-items: center;
+  padding: 0 5px;
+}
+.HistoryItem {
+  width: 100%;
+  height: 120px;
+  padding: 15px 12px;
+  border-radius: 14px;
+  background-color: #d7ecff;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.HistoryItemHeader {
+  margin-bottom: 5px;
+  border-bottom: #666 dashed 1px;
+}
+.HistoryItemDetailGroup,
+.HistoryItemNumberGroup,
+.HistoryItemHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.HistoryItemBody {
+  display: inherit;
+  flex-direction: column;
+}
+.HistoryItemDetailGroup {
+  margin-top: 12px;
+}
+.itemDetailGroup {
+  display: flex;
+  padding: 7px 0;
+  border-bottom: #666 solid 1px;
+  height: 120px;
+}
+.itemDetailGroup span {
+  margin-left: 10px;
+}
+.itemDetailImgWrapper {
+  height: 100px;
+  width: 100px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.itemDetailImgWrapper img {
+  width: 100%;
+  height: auto;
+}
+.itemDetailContent {
+  margin-left: 5px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

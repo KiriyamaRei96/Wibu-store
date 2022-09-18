@@ -1,0 +1,45 @@
+.bannerWrapper {
+  height: 160px;
+  position: relative;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+.bannerWrapper img {
+  height: auto;
+  width: 100%;
+  filter: blur(1px);
+}
+.bannerWrapper h2 {
+  position: absolute;
+  color: white;
+  top: 65%;
+  left: 15px;
+}
+.contactBody {
+  display: flex;
+  flex-direction: column;
+}
+.contactBody div {
+  display: inherit;
+  text-transform: capitalize;
+}
+.ContactContainer div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.contactMapContainer {
+  flex-direction: column;
+  text-align: center;
+}
+.contactMap {
+  height: 500px;
+}
+.pageContainer div {
+  width: 100%;
+}

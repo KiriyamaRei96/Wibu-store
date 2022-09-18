@@ -1,0 +1,63 @@
+/* big screen */
+@media screen and (min-width: 1201px) {
+  .main-width {
+    width: 1200px;
+  }
+}
+/* pc screen */
+@media screen and (max-width: 1200px) {
+  .main-width {
+    width: 100%;
+  }
+}
+
+.main-width {
+  margin-left: auto;
+  margin-right: auto;
+}
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.background-color {
+  background-color: aliceblue;
+}
+.Main {
+  height: fit-content;
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+}
+
+.header__center-group {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.header__end-group {
+  justify-content: center;
+  align-items: center;
+}
+
+.runner {
+  background-color: var(--primitive);
+  height: 2px;
+  top: 28px;
+  transition: all 0.2s;
+  position: absolute;
+}
+.NavSearch__input-group {
+  flex: 1;
+  box-sizing: border-box;
+  position: relative;
+}
+.NavSearch__input-group > .ant-input-affix-wrapper {
+  border-radius: 15px;
+}
+
+.seleted span {
+  color: var(--primitive);
+}
+.body-group {
+  background: aliceblue;
+}

@@ -1,0 +1,346 @@
+@media screen and (max-width: 1000px) {
+  .productNav {
+    display: none !important;
+  }
+  .productList {
+    padding: 0 4px !important;
+  }
+  .productDivider {
+    border-left: none !important;
+  }
+  .optionsBody {
+    transform: scaleY(1) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    padding: 0 17px;
+  }
+  .optionDivider {
+    display: none;
+  }
+
+  .optionsTitle {
+    display: none !important;
+  }
+  .productFilterBtnGroup {
+    display: block !important;
+  }
+}
+.drawerBtn {
+  text-transform: capitalize;
+  width: calc(100% / 4);
+  font-size: 12px;
+  text-align: center;
+}
+.drawerBtnGroup {
+  display: flex;
+  width: 100%;
+}
+.filterClearBtn {
+  background-color: var(--delete);
+  margin-bottom: 5px;
+  color: white;
+  border: 4px solid black;
+}
+.filterClearBtn div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filterClearLine {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: black;
+  transform: rotate(130deg);
+}
+
+.filterBtn {
+  background: var(--primitive);
+
+  color: white;
+}
+
+.fixedBtn {
+  border-radius: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  height: 50px;
+}
+.productFilterBtnGroup span {
+  cursor: pointer;
+}
+.productFilterBtnGroup {
+  bottom: 24px;
+  height: fit-content;
+  width: 50px;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 12px;
+}
+.productMain {
+  display: inherit;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.productHeader {
+  flex-basis: 160px;
+  position: relative;
+}
+
+.productDivider {
+  border-left: 1px solid #e2e9f0;
+}
+.productBanner {
+  padding-top: 160px;
+  background-image: url("https://wallpaperaccess.com/full/5056931.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(0.8px);
+}
+.productBannerText {
+  position: absolute;
+  top: 65%;
+  color: white;
+  font-size: 30px;
+  left: 15px;
+  text-transform: capitalize;
+}
+.productBody {
+  display: inherit;
+}
+.productNav {
+  display: inherit;
+  flex-direction: column;
+
+  padding-right: 5px;
+}
+.optionsGroup {
+  display: inherit;
+  flex-direction: column;
+  margin-top: 7px;
+}
+.optionsTitle {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.optionsTitle > span {
+  font-size: 14px;
+  transform: rotate(180deg);
+  margin-left: 5px;
+  transition: all 0.2s;
+}
+.optionsTitle.active > span {
+  transform: rotate(0deg);
+}
+.optionsBody {
+  font-size: 16px;
+  text-transform: capitalize;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.optionsBody.active {
+  transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+  height: fit-content;
+}
+.optionsItem {
+  display: flex;
+  margin-bottom: 7px;
+  cursor: pointer;
+  align-items: baseline;
+}
+.optionsItem input[type="checkbox"]:checked ~ span {
+  text-decoration: underline;
+}
+.productDivider {
+  height: auto;
+}
+.productWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.productItems {
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  height: 300px;
+  justify-content: center;
+}
+.productItems div {
+  display: flex;
+  flex-direction: column;
+}
+.productItems img {
+  width: 100%;
+}
+.optionsPricerange {
+  display: inherit;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.productGroup {
+  width: 100%;
+  justify-content: end;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.productLink {
+  flex-basis: 100%;
+  box-shadow: 0px 1px 4px 0px black;
+  width: auto;
+  max-width: 207px;
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  animation: imgAnimation ease-in 0.5s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.productList {
+  width: 100%;
+  padding-left: 5px;
+}
+.productName {
+  font-size: 16px;
+  white-space: nowrap;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px 0;
+}
+.productItemContent {
+  justify-content: space-evenly;
+  background: #00000094;
+  color: white;
+  padding: 0 5px;
+  position: relative;
+}
+@keyframes imgAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.productCartbtn {
+  display: flex;
+
+  padding: 0px;
+
+  font-size: 26px;
+  text-transform: capitalize;
+  background: black;
+  justify-content: center;
+  border: 0;
+  width: 80%;
+}
+.productCartbtn p {
+  font-size: 14px;
+  align-self: center;
+  margin: 0;
+  height: fit-content;
+}
+.productPreview {
+  font-size: 20px;
+  display: flex;
+  width: 20%;
+
+  background: black;
+  padding: 0;
+  padding-right: 2px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primitive);
+}
+.productPreview:hover {
+  background: #0dcaf0;
+}
+div.ProductActionGroup {
+  flex-direction: row;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  margin-bottom: 4px;
+  transition: all 0.2s ease-in;
+  border-radius: 11px;
+  display: flex;
+  overflow: hidden;
+}
+.productLink:hover div.ProductActionGroup {
+  visibility: visible;
+
+  opacity: 1;
+
+  height: 30px;
+}
+
+.productCartbtn:hover {
+  border: none;
+
+  background-color: #40a9ff;
+  content: "thêm vào giỏ hàng";
+}
+
+.optionsLogo {
+  width: 96px;
+  margin-left: 16px;
+  margin-right: 7px;
+}
+.productListInfo {
+  display: flex;
+  text-transform: capitalize;
+  height: fit-content;
+  padding: 7px 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.productListInfo > div {
+  justify-content: flex-end;
+  display: inherit;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.SortSelect {
+  width: 150px;
+  background-color: aliceblue;
+}
+.SortSelect span,
+.SortSelect div {
+  background-color: aliceblue !important;
+}
+.SortSelect span {
+  z-index: 1;
+}
+.SortOption {
+  text-transform: capitalize;
+  color: #666;
+}
+.ProducAllbtn {
+  background: aliceblue;
+  text-transform: capitalize;
+}
+.ProductCreateButton {
+  text-transform: capitalize;
+}
